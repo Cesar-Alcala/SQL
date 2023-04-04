@@ -1,0 +1,21 @@
+CREATE TABLE Alcala_Store (Id TEXT PRIMARY KEY, Product TEXT, Price INTEGER, Size TEXT, Quantity_In_Stock INTEGER, Quantity_Sold INTEGER);
+
+INSERT INTO Alcala_Store VALUES (1, "White Shirt", 15, "Small", 20, 10);
+INSERT INTO Alcala_Store VALUES (2, "White Shirt", 15, "Medium", 19, 11);
+INSERT INTO Alcala_Store VALUES (3, "White Shirt", 15, "Large", 23, 7);
+INSERT INTO Alcala_Store VALUES (4, "White Shirt", 15, "Extra Large", 11, 19);
+INSERT INTO Alcala_Store VALUES (5, "White Shirt", 15, "XXL", 22, 8);
+INSERT INTO Alcala_Store VALUES (6, "Black Shirt", 14, "Small", 18, 12);
+INSERT INTO Alcala_Store VALUES (7, "Black Shirt", 14, "Medium", 17, 13);
+INSERT INTO Alcala_Store VALUES (8, "Black Shirt", 14, "Large", 14, 16);
+INSERT INTO Alcala_Store VALUES (9, "Black Shirt", 14, "Extra Large", 12, 18);
+INSERT INTO Alcala_Store VALUES (10, "Black Shirt", 14, "XXL", 15, 15);
+INSERT INTO Alcala_Store VALUES (11, "Gray Shirt", 15, "Small", 10, 20);
+INSERT INTO Alcala_Store VALUES (12, "Gray Shirt", 15, "Medium", 14, 16);
+INSERT INTO Alcala_Store VALUES (13, "Gray Shirt", 15, "Large", 8, 22);
+INSERT INTO Alcala_Store VALUES (14, "Gray Shirt", 15, "Extra Large", 7, 23);
+INSERT INTO Alcala_Store VALUES (15, "Gray Shirt", 15, "XXL", 16, 14);
+
+SELECT Id, Product, SUM (Quantity_Sold) FROM Alcala_Store GROUP BY Id;
+
+SELECT * FROM Alcala_Store ORDER BY Price
