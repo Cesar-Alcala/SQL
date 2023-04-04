@@ -1,9 +1,0 @@
-
-CREATE TABLE Family (Id INTEGER, Name TEXT, Month TEXT, Day INTEGER, Year INTEGER);
-
-INSERT INTO Family VALUES (1, "Jonathan", "March", 7, 1992);
-INSERT INTO Family VALUES (2, "Cesar", "August", 12, 1993);
-INSERT INTO Family VALUES (3, "Juneicy", "June", 14, 2000);
-INSERT INTO Family VALUES (4, "Angel", "November", 10, 2003);
-
-SELECT * FROM Family WHERE Day ORDER BY Day;
